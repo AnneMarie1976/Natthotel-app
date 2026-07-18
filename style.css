@@ -1,0 +1,114 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-image: linear-gradient(rgba(11, 19, 43, 0.3), rgba(11, 19, 43, 0.3)), url('bilder/backgrund.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+header { text-align: center; 
+         margin-bottom: 20px; 
+}
+
+h1 { color: #48cae4; 
+    margin: 0; 
+    font-size: 2.2rem; 
+}
+.subtitle { color: #ade8f4; 
+    margin: 5px 0 0 0; 
+    font-style: italic; 
+}
+
+/* bokningskortet */
+.app-card {
+    background-color: #1c2541;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h3 { text-align: center; 
+    margin-top: 0; 
+}
+
+.form-group { margin-bottom: 15px; }
+
+label { display: block; 
+    margin-bottom: 5px; 
+    color: #48cae4; 
+    font-size: 14px; 
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #3a506b;
+    background-color: #0b132b;
+    color: white;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* prisruta */
+.price-box {
+    background-color: #0b132b;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#total-price { color: #48cae4; 
+            font-size: 20px; 
+}
+
+/* knappar */
+.btn-main {
+    width: 100%; padding: 12px; background-color: #48cae4; color: #0b132b;
+    border: none; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer;
+}
+.btn-sub {
+    background-color: transparent; color: #48cae4; border: 2px solid #48cae4;
+    padding: 10px; border-radius: 6px; cursor: pointer; width: 100%;
+}
+
+/* responsivt galleri */
+.gallery { width: 100%; max-width: 800px; margin-top: 30px; text-align: center; }
+.gallery h3 { color: #48cae4; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
+.gallery-item { background-color: #1c2541; border-radius: 8px; overflow: hidden; }
+.gallery-item img { width: 100%; height: 250px; object-fit: cover; }
+.caption { padding: 8px; font-weight: bold; color: #ade8f4; } /* med klass caption stylar man endast texten under bildera*/
+
+/* hjälpklass för att dölja element */
+.hidden { display: none !important; }
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #3a506b;
+    background-color: #0b132b;
+    color: white;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+    resize: vertical; /* tillåter användaren att dra i rutan på höjden om de skriver mycket */
+    font-family: inherit; /* gör att typsnittet blir samma som resten av sidan */
+}
+
+textarea:focus {
+    border-color: #48cae4; /* gör ramen ljusblå */
+}

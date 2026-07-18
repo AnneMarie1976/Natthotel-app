@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NightOwl Care | Night Hotel for Kids & Pets</title>
+    <meta name="description" content="Secure overnight hotel care for children and pets. Perfect for tourists.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <nav class="custom-navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">NightOwl Care 🦉</a>
+        
+            <!-- NYTT: Hamburger-knapp (Visas bara på mobilen) -->
+            <button class="hamburger-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Länkarna (Får ett ID nu så JavaScript hittar dem) -->
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About Us</a>
+                <a href="contact.html" class="nav-item">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Rubrik som beskriver målet med vår app -->
+    <header>
+        <h1>NightOwl Care 🦉</h1>
+        <p class="subtitle">Secure Overnight Care for Kids & Pets</p>
+    </header>
+
+    <div class="app-card">
+        <!-- Bokningsformuläret -->
+        <div id="booking-view">
+            <form id="booking-form">
+                <h3>Nightcare Booking</h3>
+                
+                <div class="form-group">
+                    <label>What do you need care for?</label>
+                    <select id="care-type"> <!--select taggen fungerar som en menu med flera alternativ <option>-->
+                        <option value="15">Child (€15 / hour)</option>
+                        <option value="10">Pet (€10 / hour)</option>
+                        <option value="20">Both (€20 / hour)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>How many hours?</label>
+                    <input type="number" id="hours" min="1" max="12" value="4" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Your Name & Hotel</label>
+                    <input type="text" placeholder="e.g. Emily Smith - Hilton" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Contact (Email or Phone)</label>
+                    <input type="text" placeholder="e.g. customer@email.com" required>
+                </div>
+
+                <div class="form-group">
+                <label>Important Information</label>
+                <textarea id="tourist-notes" rows="3" placeholder="e.g. Emily needs her teddy bear to sleep..."></textarea>
+                </div>
+
+                <!--Prisvisning i real tid -->
+                <div class="price-box">
+                    Estimated Total: <span id="total-price">€60</span>
+                </div>
+
+                <button type="submit" class="btn-main">Confirm Booking</button>
+            </form>
+        </div>
+
+        <!--Tack-skärm (som är dold men visas när bokningen är gjort) -->
+        <div id="confirmation-view" class="hidden">
+            <h2>Booking Confirmed!</h2>
+            <p>Your reservation is registered. See you tonight!</p>
+            <button id="new-booking-btn" class="btn-sub">New Booking</button>
+        </div>
+    </div>
+
+    <!--bildgalleri -->
+    <section class="gallery">
+        <h3>Our Rooms</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="bilder/Sovrum.jpg" alt="Kids Suite">
+                <div class="caption">Kids Suite</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.sarando.se/cdn/shop/files/Pawfey_Premium_Calming_Dog_Bed_13_720x720.webp?v=1774031167" alt="Pets Lounge">
+                <div class="caption">Pets Lounge</div>
+            </div>
+            <div class="gallery-item">
+                <img src="bilder/Playground.jpg" alt="Play Area">
+                <div class="caption">Play Area</div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <footer>&copy 2026 NightOwl Care 🦉. All rights reserved</footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
