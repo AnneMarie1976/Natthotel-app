@@ -1,5 +1,5 @@
 body {
-    font-family: system-ui, sans-serif;
+    font-family: system-ui, sans-serif; /*system-ui betyder att webbplatsen automatiskt ska använda datorns eget inbyggda typsnitt.*/
     background-image: linear-gradient(rgba(11, 19, 43, 0.3), rgba(11, 19, 43, 0.3)), url('bilder/backgrund.jpg');
     background-size: cover;
     background-position: center;
@@ -84,7 +84,7 @@ select, input {
     padding: 10px; border-radius: 6px; cursor: pointer; width: 100%;
 }
 
-/* responsivt galleri */
+/* bilder */
 .gallery { width: 100%; max-width: 800px; margin-top: 30px; text-align: center; }
 .gallery h3 { color: #48cae4; }
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
